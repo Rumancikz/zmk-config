@@ -15,7 +15,7 @@
             label = "LAYER_1_Z";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&kp Z>;
-            mods = <(LCTRL|RCTRL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
 
