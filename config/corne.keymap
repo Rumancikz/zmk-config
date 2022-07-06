@@ -10,11 +10,11 @@
 
 / {
     behaviors {
-        layer1z: layer_1_z {
+        alttabz: alt_tab_z {
             compatible = "zmk,behavior-mod-morph";
-            label = "LAYER_1_Z";
+            label = "ALT_TAB_Z";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&kp Z>;
+            bindings = <&mt LALT TAB>, <&kp Z>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
@@ -23,38 +23,22 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-     &trans &kp Q       &kp W  &kp F      &kp P &kp B &kp J     &kp L   &kp U     &kp Y   &kp BSPC  &trans
-     &trans &kp A       &kp R  &kp S      &kp T &kp G &kp M     &kp N   &kp E     &kp I   &kp O     &trans
-     &trans &mt LCTRL Z &kp X  &kp C      &kp D &kp V &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH  &trans
-                        &mt LALT TAB &kp LSHIFT &layer1z &mo 2 &kp SPACE &kp RET
+     &trans &kp Q       &kp W    &kp F      &kp P &kp B &kp J     &kp L   &kp U     &kp Y   &kp BSPC  &trans
+     &trans &kp A       &kp R    &kp S      &kp T &kp G &kp M     &kp N   &kp E     &kp I   &kp O     &trans
+     &trans &mt LCTRL Z &kp X    &kp C      &kp D &kp V &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH  &trans
+                        &alttabz &kp LSHIFT &mo 1 &mo 2 &kp SPACE &kp RET
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-     &trans &kp GRAVE     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR   &kp PG_UP    &kp HOME   &kp UP   &kp END    &kp LC(BSPC) &trans
-     &trans &kp APOS      &kp LC(LALT) &kt LALT     &kt LCTRL    &kp LC(S)    &kp PG_DN    &kp LEFT   &kp DOWN &kp RIGHT  &kp SEMI     &trans
-     &trans &kp LG(LS(S)) &trans       &trans       &kp EQUAL    &trans       &kp ESC      &kp K_PREV &kp C_PP &kp K_NEXT &kp C_MUTE   &trans
-                                       &kp TAB      &kp LSHIFT   &mo 1        &mo 2        &kp SPACE  &kp RET
+     &trans &kp GRAVE     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR   &kp PG_UP    &kp HOME   &kp UP   &kp END    &kp LC(BSPC) &trans
+     &trans &kp APOS      &kp LC(LALT) &kt LALT     &kp KP_MULTIPLY &kp LC(S)    &kp PG_DN    &kp LEFT   &kp DOWN &kp RIGHT  &kp SEMI     &trans
+     &trans &kp LG(LS(S)) &trans       &trans       &kp EQUAL       &trans       &kp ESC      &kp K_PREV &kp C_PP &kp K_NEXT &kp C_MUTE   &trans
+                                       &kp TAB      &kp LSHIFT      &mo 1        &mo 2        &kp SPACE  &kp RET
                         >;
                 };
-
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &kp EXCL  &kp LPAR &kp RPAR &kp KP_MULTIPLY &kp PLUS   &kp AMPS  &kp N7 &kp N8 &kp N9 &kp DEL  &trans
    &trans &kp PIPE  &kp LBKT &kp RBKT &kp DLLR        &kp AT     &kp PRCNT &kp N4 &kp N5 &kp N6 &kp APOS &trans
