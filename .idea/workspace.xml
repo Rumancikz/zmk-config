@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/config/corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/corne.keymap" afterDir="false" />
-    </list>
+    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +69,7 @@
       <workItem from="1657155060120" duration="1219000" />
       <workItem from="1657484405789" duration="367000" />
       <workItem from="1658079587122" duration="3288000" />
-      <workItem from="1658084898240" duration="943000" />
+      <workItem from="1658084898240" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1656538600477</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658085624499</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modified Keymap">
+      <created>1658085850086</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085850086</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
