@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="changed aposq">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/config/corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,7 @@
       <workItem from="1657155060120" duration="1219000" />
       <workItem from="1657484405789" duration="367000" />
       <workItem from="1658079587122" duration="3288000" />
-      <workItem from="1658084898240" duration="489000" />
+      <workItem from="1658084898240" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1656538600477</created>
@@ -103,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658084760532</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed aposq">
+      <created>1658085400417</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085400417</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modified Keymap">
+      <created>1658085624499</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085624499</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +139,8 @@
     <MESSAGE value="Adjusted the sleep config and changed key positions" />
     <MESSAGE value="changed apos" />
     <MESSAGE value="Added layer shift hold and bluetooth hold to clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added layer shift hold and bluetooth hold to clear" />
+    <MESSAGE value="changed aposq" />
+    <MESSAGE value="Modified Keymap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Keymap" />
   </component>
 </project>
