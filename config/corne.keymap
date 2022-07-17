@@ -68,7 +68,7 @@
                                 alt_layer {
                         bindings = <
    &trans &bt BT_CLR          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2 &trans &trans &trans       &kp LA(UP)       &trans        &trans    &trans
-   &trans &kp LS(LC(LWIN(W))) &kp LWIN(PG_DN) &kp LWIN(PG_UP) &kp LWIN     &trans &trans &kp LA(LEFT) &kp LA(DOWN)     &kp LA(RIGHT) &kp COLON &trans
+   &trans &kp LS(LC(LG(W)))   &kp LG(PG_DN)   &kp LG(PG_UP)   &kp LWIN     &trans &trans &kp LA(LEFT) &kp LA(DOWN)     &kp LA(RIGHT) &kp COLON &trans
    &trans &trans              &trans          &trans          &trans       &trans &trans &trans       &kp LC(LA(DOWN)) &trans        &trans    &trans
                               &trans          &trans          &trans       &trans &trans &trans
                                         >;
