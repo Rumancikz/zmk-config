@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="">
+    <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="Modified Keymap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/corne.keymap" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <workItem from="1657155060120" duration="1219000" />
       <workItem from="1657484405789" duration="367000" />
       <workItem from="1658079587122" duration="3288000" />
-      <workItem from="1658084898240" duration="4131000" />
+      <workItem from="1658084898240" duration="7399000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1656538600477</created>
@@ -137,7 +137,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658088926876</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Modified Keymap">
+      <created>1658091086010</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658091086010</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Modified Keymap">
+      <created>1658091241156</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658091241156</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Modified Keymap">
+      <created>1658091751465</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658091751465</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Modified Keymap">
+      <created>1658091908146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658091908146</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
