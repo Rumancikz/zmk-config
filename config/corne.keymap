@@ -10,6 +10,7 @@
 
 / {
     behaviors {
+
         alttabz: alt_tab_z {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TAB_Z";
@@ -17,6 +18,7 @@
             bindings = <&mt LALT TAB>, <&kp Z>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+
         layer1alt: layer_1_alt {
             compatible = "zmk,behavior-mod-morph";
             label = "LAYER_1_ALT";
@@ -24,6 +26,25 @@
             bindings = <&mo 1>, <&kp LALT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+
+        gbt: global_bluetooth_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_BLUETOOTH_TOGGLE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&bt>, <&bt BT_CLR>;
+        };
+
+        lsoh: layer_shift_on_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_SHIFT_ON_HOLD";
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&mo>;
+        };
+
     };
 
         keymap {
@@ -31,18 +52,18 @@
 
                 default_layer {
                         bindings = <
-     &trans &kp Q       &kp W    &kp F      &kp P      &kp B &kp J     &kp L   &kp U     &kp Y   &kp BSPC  &trans
-     &trans &kp A       &kp R    &kp S      &kp T      &kp G &kp M     &kp N   &kp E     &kp I   &kp O     &trans
-     &trans &mt LCTRL Z &kp X    &kp C      &kp D      &kp V &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH  &trans
-                        &alttabz &kp LSHIFT &layer1alt &mo 2 &kp SPACE &kp RET
+     &trans &kp Q       &kp W        &kp F      &kp P      &kp B &kp J     &kp L   &kp U     &kp Y   &kp BSPC  &trans
+     &trans &kp A       &kp R        &kp S      &kp T      &kp G &kp M     &kp N   &kp E     &kp I   &kp O     &trans
+     &trans &mt LCTRL Z &kp X        &kp C      &kp D      &kp V &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH  &trans
+                        &lsoh LALT 3 &kp LSHIFT &layer1alt &mo 2 &kp SPACE &kp RET
                         >;
                 };
                 lower_layer {
                         bindings = <
-     &trans &kp GRAVE     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR   &kp PG_UP    &kp HOME   &kp UP   &kp END    &kp LC(BSPC) &trans
-     &trans &kp APOS      &kp LC(LALT) &kt LALT     &kp KP_MULTIPLY &kp LC(S)    &kp PG_DN    &kp LEFT   &kp DOWN &kp RIGHT  &kp SEMI     &trans
-     &trans &kp LG(LS(S)) &trans       &trans       &kp EQUAL       &trans       &kp ESC      &kp K_PREV &kp C_PP &kp K_NEXT &kp C_MUTE   &trans
-                                       &kp TAB      &kp LSHIFT      &mo 1        &mo 2        &kp SPACE  &kp RET
+     &trans &kp GRAVE     &gbt BT_SEL 0 &gbt BT_SEL 1 &gbt BT_SEL 2   &trans       &kp PG_UP    &kp HOME   &kp UP   &kp END    &kp LC(BSPC) &trans
+     &trans &kp APOS      &kp LC(LALT)  &kt LALT      &kp KP_MULTIPLY &kp LC(S)    &kp PG_DN    &kp LEFT   &kp DOWN &kp RIGHT  &kp SEMI     &trans
+     &trans &kp LG(LS(S)) &trans        &trans        &kp EQUAL       &trans       &kp ESC      &kp K_PREV &kp C_PP &kp K_NEXT &kp C_MUTE   &trans
+                                        &kp TAB       &kp LSHIFT      &mo 1        &mo 2        &kp SPACE  &kp RET
                         >;
                 };
                 raise_layer {
@@ -53,5 +74,23 @@
                     	     &kp TAB  &kp LSHIFT      &mo 1       &mo 2     &kp SPACE  &kp RET
                         >;
                 };
+                alt_layer {
+                            bindings = <
+                     &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                     &trans &trans &trans &trans &trans &trans   &trans &kp Z  &trans &trans &trans &trans
+                     &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                                          &trans &trans &trans   &trans &trans &trans
+                                        >;
+                                };
         };
 };
+/*
+                empty_layer {
+                        bindings = <
+     &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+     &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+     &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                          &trans &trans &trans   &trans &trans &trans
+                        >;
+                };
+*/
