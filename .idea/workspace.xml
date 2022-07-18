@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c79ab79-640b-44eb-abe3-158c551835a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <workItem from="1657155060120" duration="1219000" />
       <workItem from="1657484405789" duration="367000" />
       <workItem from="1658079587122" duration="3288000" />
-      <workItem from="1658084898240" duration="9791000" />
+      <workItem from="1658084898240" duration="11549000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1656538600477</created>
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658102271628</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Modified Keymap">
+      <created>1658103560284</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658103560284</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
