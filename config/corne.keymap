@@ -69,13 +69,13 @@
                         bindings = <
    &trans &bt BT_CLR          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2 &trans &trans &trans       &kp LA(UP)       &trans        &kp COLON &trans
    &trans &kp LS(LC(LG(W)))   &kp LG(PG_DN)   &kp LG(PG_UP)   &kp LWIN     &trans &trans &kp LA(LEFT) &kp LA(DOWN)     &kp LA(RIGHT) &kp APOS  &trans
-   &trans &trans              &trans          &trans          &trans       &trans &trans &trans       &kp LC(LA(DOWN)) &trans        &trans    &trans
+   &trans &kp LC(LA(L))       &trans          &trans          &trans       &trans &trans &trans       &kp LC(LA(DOWN)) &trans        &trans    &trans
                               &trans          &trans          &trans       &trans &trans &trans
                                         >;
                                 };
         };
 };
-/*t
+/*
                 empty_layer {
                         bindings = <
      &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
