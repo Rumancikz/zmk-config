@@ -17,6 +17,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp Z>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
+            flavor = "hold-preferred";
         };
 
         layer1alt: layer_1_alt {
