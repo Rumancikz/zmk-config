@@ -36,6 +36,15 @@
             bindings = <&mo>, <&kp>;
         };
 
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
     };
 
         keymap {
@@ -43,15 +52,15 @@
 
                 default_layer {
                         bindings = <
-     &trans &kp Q       &kp W        &kp F      &kp P      &kp B &kp J     &kp L   &kp U     &kp Y   &kp BSPC  &trans
-     &trans &kp A       &kp R        &kp S      &kp T      &kp G &kp M     &kp N   &kp E     &kp I   &kp O     &trans
-     &trans &mt LCTRL Z &kp X        &kp C      &kp D      &kp V &kp K     &kp H   &kp COMMA &kp DOT &kp FSLH  &trans
-                        &lsoh 3 TAB  &kp LSHIFT &mo 1      &mo 2 &kp SPACE &kp RET
+     &trans &kp Q       &kp W        &kp F      &kp P       &kp B &kp J     &kp L       &kp U      &kp Y      &kp BSPC  &trans
+     &trans &hm ESC A   &hm LGUI R   &hm LALT S &hm LCTRL T &kp G &kp M     &hm LCTRL N &hm LALT E &hm LGUI I &hm ESC O &trans
+     &trans &mt LCTRL Z &kp X        &kp C      &kp D       &kp V &kp K     &kp H       &kp COMMA  &kp DOT    &kp FSLH  &trans
+                        &lsoh 3 TAB  &kp LSHIFT &mo 1       &mo 2 &kp SPACE &kp RET
                         >;
                 };
                 lower_layer {
                         bindings = <
-     &trans &kp GRAVE   &trans        &trans    &trans          &trans    &kp PG_UP &kp HOME   &kp UP   &kp END    &kp DEL      &trans
+     &trans &kp GRAVE   &trans        &kp TILDE &kp CARET       &trans    &kp PG_UP &kp HOME   &kp UP   &kp END    &kp DEL      &trans
      &trans &kp APOS    &kp LC(LALT)  &kp LC(Z) &kp KP_MULTIPLY &kp LC(S) &kp PG_DN &kp LEFT   &kp DOWN &kp RIGHT  &kp SEMI     &trans
      &trans &mt LCTRL Z &trans        &trans    &kp EQUAL       &trans    &kp ESC   &kp K_PREV &kp C_PP &kp K_NEXT &kp C_MUTE   &trans
                                       &kp TAB   &kp LSHIFT      &mo 1     &mo 2     &kp SPACE  &kp RET
